@@ -14,9 +14,20 @@
 
     ol,
     ul {
-        list-style: decimal;
+        list-style: disc;
         margin-left: 1.25rem;
         padding: 0;
+    }
+    p,
+    li,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    a {
+        line-height: 2em;
     }
 }
 
