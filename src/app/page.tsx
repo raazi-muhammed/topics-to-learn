@@ -1,15 +1,45 @@
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import {
+    Card,
+    CardContent,
+    CardDescription,
+    CardTitle,
+} from "@/components/ui/card";
+
+function TopicCard({
+    title,
+    description,
+    href,
+}: {
+    title: string;
+    description: string;
+    href: string;
+}) {
+    return (
+        <Link href={href}>
+            <Card>
+                <CardContent className="py-4">
+                    <CardTitle className="m-0 mb-2">{title}</CardTitle>
+                    <CardDescription>{description}</CardDescription>
+                </CardContent>
+            </Card>
+        </Link>
+    );
+}
 
 export default function Home() {
     return (
-        <main className="container">
-            <Button variant="ghost">
-                <Link href="/react">React</Link>
-            </Button>
-            <Button variant="ghost">
-                <Link href="/graphql">GraphQl</Link>
-            </Button>
+        <main className="grid-auto container grid grid-cols-3 gap-8">
+            <TopicCard
+                href="/react"
+                title="React"
+                description="Docs for React"
+            />
+            <TopicCard
+                href="/graphql"
+                title="GraphQl"
+                description="Docs for GraphQL"
+            />
         </main>
     );
 }
