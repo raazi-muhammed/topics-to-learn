@@ -1,15 +1,11 @@
 import TopicCard from "@/components/TopicCard";
+import { topics } from "@/constants/topicsList";
 
 export default function Home() {
-    const topics = [
-        { href: "/react", title: "React", description: "Docs for React" },
-        { href: "/graphql", title: "GraphQl", description: "Docs for GraphQL" },
-    ];
-
     return (
-        <main className="grid-auto container grid grid-cols-3 gap-8">
+        <main className="grid-auto container grid grid-cols-3 gap-8 pb-16">
             {topics.map((topic) => (
-                <TopicCard {...topic} />
+                <TopicCard key={topic.href} {...topic} />
             ))}
         </main>
     );
