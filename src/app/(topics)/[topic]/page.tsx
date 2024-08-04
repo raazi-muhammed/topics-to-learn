@@ -1,8 +1,9 @@
 import HTMLContent from "@/components/HTMLContent";
+import { MARKDOWN_BASE_URL } from "@/constants/env";
 
 async function getMarkDown(topic: string) {
     const response = await fetch(
-        `http://localhost:3000/content/${topic}-doc.md`
+        `${MARKDOWN_BASE_URL}/content/${topic}-doc.md`
     );
     return response.text();
 }
