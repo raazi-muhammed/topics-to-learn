@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import NavBar from "@/components/layout/NavBar";
 import { ThemeProvider } from "@/providers/theme/theme-provider";
+import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -29,6 +30,7 @@ export default function RootLayout({
                     disableTransitionOnChange>
                     <NavBar />
                     {children}
+                    <Analytics />
                 </ThemeProvider>
             </body>
         </html>
