@@ -14,7 +14,7 @@
 
     ol,
     ul {
-        list-style: disc;
+        list-style: decimal;
         margin-left: 1.25rem;
         padding: 0;
     }
