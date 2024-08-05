@@ -12,6 +12,11 @@ export const topics = [
         description: "Docs for JavaScript",
     },
     {
+        href: MARKDOWN_LINKS.python,
+        title: "Python",
+        description: "Docs for Python",
+    },
+    {
         href: MARKDOWN_LINKS.nodeExpress,
         title: "Node & Express",
         description: "Docs for Node & Express",
