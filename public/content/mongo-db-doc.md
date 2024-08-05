@@ -1,378 +1,368 @@
 # MongoDB
 
-1. ## **Theory**
+### Theory
 
 1. SQL(relational) v s
-1. NoSQL ()
-1. What is MongoDB?
-1. Run on JS Engine
-1. How does mongoDB work?
-1. Non-relational Document based
-1. Advantage and Disadvantages
-1. BSON
-1. MongoDB Structure
-1. MongoDB architecture
-1. JSON vs BSON
-1. MongoDB shell
-1. CRUD Operations
-1. Cursor, Iterate a Cursor
-1. Time to Leave
-1. Maximum Document Size : 16Mb
-1. **Storage engines**
-    1. **types**
+2. NoSQL ()
+3. What is MongoDB?
+4. Run on JS Engine
+5. How does mongoDB work?
+6. Non-relational Document based
+7. Advantage and Disadvantages
+8. BSON
+9. MongoDB Structure
+10. MongoDB architecture
+11. JSON vs BSON
+12. MongoDB shell
+13. CRUD Operations
+14. Cursor, Iterate a Cursor
+15. Time to Leave
+16. Maximum Document Size : 16Mb
+17. Storage engines
+    1. types
         1. WiredTiger
-        1. ger engine
-        1. In-memory engine
-        1. MMAPv1
-    1. GridFS
-    1. Journal
-1. **Data types in MongoDB (BSON)**
+        2. ger engine
+        3. In-memory engine
+        4. MMAPv1
+    2. GridFS
+    3. Journal
+18. Data types in MongoDB (BSON)
     1. ObjectId
         1. timestamp
-        1. random value
-        1. incrementing counter
-    1. String
-    1. Int, longInt, Double
-    1. Array, Object
-    1. Boolean
-    1. Date
-    1. Decimal128
-    1. Regex
-    1. Javascript
+        2. random value
+        3. incrementing counter
+    2. String
+    3. Int, longInt, Double
+    4. Array, Object
+    5. Boolean
+    6. Date
+    7. Decimal128
+    8. Regex
+    9. Javascript
         1. with scope
-        1. without scope
-    1. MinKey, MaxKey
-    1. Binary data
-1. Cursor
+        2. without scope
+    10. MinKey, MaxKey
+    11. Binary data
+19. Cursor
     1. cursor methods
-    1. \- toArray
-    1. \- forEach
-    1. cursor.allowPartialResults()
-1. **Collection**
-
-    1. ## db
-
-    1. ## db.createCollection(collectionName)
-
-    1. ## show collections
-
-    1. renaming Collection
-
-1. **Documents**
-    1. adding new Documents
-    1. Nested Documents
-        1. advantage
-1. **Inserting Document**
-1. Insert One and Many
-1. what are the additional methods used for inserting
-1. **Finding / Querying**
-    1. find()+
-        1. iterate (it)
-        1. pretty()
-    1. findOne({ _filter_ })
-    1. finding In nested Array
-        1. “_field_._field_”
-        1. match
-        1. exact match
-        1. multiple match
-    1. Array
-        1. finding in specific order
-        1. without regard to order
-        1. query by array index
-        1. query by array length
-    1. **Projection**
-        1. explicitly include fields
-    1. Null, $type: 10, $exists
-1. **Filtering**
-    1. find( _filter_ )
-    1. find( _{filter}, {fieldsToGet}_ )
-1. **Method Chaining**
-    1. count()
-    1. limit()
-    1. sort( 1 or \-1 )
-    1. skip()
-1. **Operators** (denoted by $)
-    1. {$gt: number} $gte
-    1. $lt, $lte
-    1. $eq, $ne
-    1. $or $and $not
-    1. $in: \[1,2,3\], $nin: \[1,2\]
-    1. $all
-    1. $set, $unset
-    1. $addToSet
-    1. **$elemMatch**
-    1. $slice
-    1. $size
-    1. $inc: 1, $inc: \-1
-    1. $pull, $push
-    1. $each \[ 1, 2 \]
-    1. $eq, $ne
-    1. $currentDate
-    1. $exists
-    1. **$expr**
-    1. **$cond**
-    1. $rename
-    1. $min, $max
-    1. $mul
-    1. $ifNull
-    1. $let
-    1. **Array Operator**
-        1. $push
-        1. $each
-        1. $pull
-        1. $pullAll
-        1. $pop
-        1. $elemMatch
-1. **Deleting**
-    1. deleteOne({ _field:value_ })
-    1. deleteMany()
-    1. remove()
-    1. delete vs remove
-1. **Updating**
-    1. updateOne( {_whichObject_} , {$set: {_field: value, field: value_} } )
-    1. **Operators**
-        1. $set
-        1. $unset
-        1. $rename
-    1. updateMany()
-    1. replaceOne()
-    1. incrementing & decrementing
-    1. adding and remove from array
-    1. upsert
-    1. update() vs updateOne()
-    1. updateOne vs replaceOne
-1. **bulkWrite()**
-    1. ordered: false
-    1. ordered vs unordered
-    1. advantages and disadvantages
-1. **Commands**
-    1. mongosh
+    2. \- toArray
+    3. \- forEach
+    4. cursor.allowPartialResults()
+20. Collection
     1. db
-    1. show dbs
-    1. db.stats
-1. **Aggregation**
+    2. db.createCollection(collectionName)
+    3. show collections
+    4. renaming Collection
+21. Documents
+    1. adding new Documents
+    2. Nested Documents
+        1. advantage
+22. Inserting Document
+23. Insert One and Many
+24. what are the additional methods used for inserting
+25. Finding / Querying
+    1. find()
+        1. iterate (it)
+        2. pretty()
+    2. `findOne({<filter>})`
+    3. finding In nested Array
+        1. `field.field`
+        2. match
+        3. exact match
+        4. multiple match
+    4. Array
+        1. finding in specific order
+        2. without regard to order
+        3. query by array index
+        4. query by array length
+    5. Projection
+        1. explicitly include fields
+    6. Null, `$type: 10`, `$exists`
+26. Filtering
+    1. `find(<filter>)`
+    2. `find({<filter>}, {<fieldsToGet>})`
+27. Method Chaining
+    1. `count()`
+    2. `limit()`
+    3. `sort( 1 or \-1 )`
+    4. `skip()`
+28. Operators (denoted by $)
+    1. {$gt: number} $gte
+    2. $lt, $lte
+    3. $eq, $ne
+    4. $or $and $not
+    5. $in: \[1,2,3\], $nin: \[1,2\]
+    6. $all
+    7. $set, $unset
+    8. $addToSet
+    9. $elemMatch
+    10. $slice
+    11. $size
+    12. $inc: 1, $inc: \-1
+    13. $pull, $push
+    14. $each \[ 1, 2 \]
+    15. $eq, $ne
+    16. $currentDate
+    17. $exists
+    18. $expr
+    19. $cond
+    20. $rename
+    21. $min, $max
+    22. $mul
+    23. $ifNull
+    24. $let
+    25. Array Operator
+        1. $push
+        2. $each
+        3. $pull
+        4. $pullAll
+        5. $pop
+        6. $elemMatch
+29. Deleting
+    1. `deleteOne({<field:value>})`
+    2. deleteMany()
+    3. remove()
+    4. delete vs remove
+30. Updating
+    1. `updateOne( {<whichObject>} , {$set: {<field:value>, <field:value>}} )`
+    2. Operators
+        1. `$set`
+        2. `$unset`
+        3. `$rename`
+    3. updateMany()
+    4. replaceOne()
+    5. incrementing & decrementing
+    6. adding and remove from array
+    7. upsert
+    8. update() vs updateOne()
+    9. updateOne vs replaceOne
+31. bulkWrite()
+    1. ordered: false
+    2. ordered vs unordered
+    3. advantages and disadvantages
+32. Commands
+    1. mongosh
+    2. db
+    3. show dbs
+    4. db.stats
+33. Aggregation
     1. How does it work
-    1. advantages
-    1. types of aggregation
-    1. distinct
-    1. **Aggregate stages**
+    2. advantages
+    3. types of aggregation
+    4. distinct
+    5. Aggregate stages
         1. $addFields
-        1. $match
-        1. $group
+        2. $match
+        3. $group
             1. grouping by
-            1. \-nested field
-            1. \-multiple field
-        1. $sort
-        1. $set
-        1. $count
-        1. \- other ways to count
-        1. \- client and server side counting
-        1. $limit, $skip
-        1. $merge
-        1. $out
-        1. $project
-        1. $lookup
-        1. $unwind
-        1. $facet
-        1. $fill
-        1. $bucket
+                1. nested field
+                2. multiple field
+        4. $sort
+        5. $set
+        6. $count
+            1. other ways to count
+            2. client and server side counting
+        7. $limit, $skip
+        8. $merge
+        9. $out
+        10. $project
+        11. $lookup
+        12. $unwind
+        13. $facet
+        14. $fill
+        15. $bucket
             1. $bucketAuto
-        1. $densify
-        1. $redact
-        1. $search
-        1. allowDiskUse: true
-    1. “$name” vs ”name”
-    1. **Accumulator Operators**
+        16. $densify
+        17. $redact
+        18. $search
+        19. allowDiskUse: true
+    6. “$name” vs ”name”
+    7. Accumulator Operators
         1. $sum, $avg, $max, $min
-    1. **Unary Operators**
+    8. Unary Operators
         1. $type, $lt $gt $or $and $multiply
-    1. **Aggregation Pipeline**
+    9. Aggregation Pipeline
         1. How does aggregation pipeline work?
-        1. memory limit : 100mb
+        2. memory limit : 100mb
             1. spill to disk
-    1. Batch sizing
-    1. Iterator Size
-    1. Query routing
-    1. **Map Reduce**
+    10. Batch sizing
+    11. Iterator Size
+    12. Query routing
+    13. Map Reduce
         1. for what is it used?
-        1. find sum, avg
-1. **Indexes**
+        2. find sum, avg
+34. Indexes
     1. pros and cons of Indexes
-    1. createIndex({ _filed: value_ })
-    1. options when creating Index
+    2. `createIndex({<field: value>})`
+    3. options when creating Index
         1. background: true
-        1. unique: true
-        1. name: “\<_indexName_\>”
-    1. getIndex()
-    1. dropIndex(), dropIndexes
-    1. reIndex()
-    1. rename Index
-    1. hiding index
-    1. covered query
-    1. **Types of Indexes**
+        2. unique: true
+        3. name: “\<_indexName_\>”
+    4. getIndex()
+    5. dropIndex(), dropIndexes
+    6. reIndex()
+    7. rename Index
+    8. hiding index
+    9. covered query
+    10. Types of Indexes
         1. Single Field Index
-        1. Compound Index
-        1. Multikey Index
-        1. Text Index
-        1. Geospatial, Hashed, Clustered Index
-        1. Covered query
-        1.
-1. **Schema**
+        2. Compound Index
+        3. Multikey Index
+        4. Text Index
+        5. Geospatial, Hashed, Clustered Index
+        6. Covered query
+35. Schema
     1. pros and cons of using schema
-    1. optional schema
-    1. validation action
-1. **Relationships**
+    2. optional schema
+    3. validation action
+36. Relationships
     1. embedding
-    1. referencing
-    1. one-to-one
-    1. one-to-many
-    1. one-to-squillions
-    1. many-to-many
-1. **Replication**
-
+    2. referencing
+    3. one-to-one
+    4. one-to-many
+    5. one-to-squillions
+    6. many-to-many
+37. Replication
     1. replica set
-    1. advantage and disadvantages of replication
-    1. **Replication Architecture**
+    2. advantage and disadvantages of replication
+    3. Replication Architecture
         1. primary and secondary nodes
-        1. arbiter
-        1. process of election
-        1. heartbeat
-    1. Process of Election
-    1. Replication lag
-    1. operation log (oplog)
-    1. **Types of replication**
+        2. arbiter
+        3. process of election
+        4. heartbeat
+    4. Process of Election
+    5. Replication lag
+    6. operation log (oplog)
+    7. Types of replication
         1. Asynchronous Replication
-        1. Synchronous Replication
-        1. Majority Commit
-        1. etc…
-
-1. **Sharding**
+        2. Synchronous Replication
+        3. Majority Commit
+        4. etc…
+38. Sharding
     1. advantages and disadvantages
-    1. **Sharding Architecture**
+    2. Sharding Architecture
         1. What is Mongos/Router
-        1. Config Server
-    1. **Types of sharding**
+        2. Config Server
+    3. Types of sharding
         1. Hashed sharding
-        1. Ranged sharding
-        1. Zone Sharding
-    1. **Shard key**
+        2. Ranged sharding
+        3. Zone Sharding
+    4. Shard key
         1. shard hotspots
-        1. normal shard key
-        1. hashed shard key
-    1. Vertical and horizontal scaling
-    1. Zones
-    1. mongos
-    1. auto balancer
-    1. scatter-gather
-1. **Cluster**
+        2. normal shard key
+        3. hashed shard key
+    5. Vertical and horizontal scaling
+    6. Zones
+    7. mongos
+    8. auto balancer
+    9. scatter-gather
+39. Cluster
     1. types of cluster
-    1. config servers
-1. **Data Modeling**
+    2. config servers
+40. Data Modeling
     1. embedded data model
-    1. reference data model
-    1. linking vs embedding
-1. **Transactions**
+    2. reference data model
+    3. linking vs embedding
+41. Transactions
     1. How to do transaction
-        1. **Session**
-        1. startTransaction
-        1. abortTransaction
-        1. commitTransaction
-    1. ACID Transaction
-    1. A- Atomicity
-    1. C- Consistency
-    1. I \- Isolation
-    1. D \- Durability
-1. Create view in Mongodb
-1. CAP Theorem
+        1. Session
+        2. startTransaction
+        3. abortTransaction
+        4. commitTransaction
+    2. ACID Transaction
+        1. A - Atomicity
+        2. C - Consistency
+        3. I - Isolation
+        4. D - Durability
+42. Create view in Mongodb
+43. CAP Theorem
     1. theorem
-    1. C- Consistency
-    1. A \- Availability
-    1. P \- Particle tolerance
-1. **Isolation levels**
-
+    2. C - Consistency
+    3. A - Availability
+    4. P - Particle tolerance
+44. Isolation levels
     1. Read Concerns
-    1. \- local
-    1. \- maojiry
-    1. \- available
-    1. Write Concerns
-    1. \- w:1 (Acknowledged)
-    1. \- w:0 (Unacknowledged)
-    1. \- majority
-    1. \- all
-    1. \- journaled
+        1. local
+        2. maojiry
+        3. available
+    2. Write Concerns
+        1. w:1 (Acknowledged)
+        2. w:0 (Unacknowledged)
+        3. majority
+        4. all
+        5. journaled
 
-1. ## **VS**
+### VS
 
-    1. $or vs $in
-    1. $all vs $in
-    1. $elemMatch vs $in
-    1. drop() vs remove()
-    1. findAndModify() vs findOneAndUpdate()
-    1. Primary key vs secondary key
-    1. join vs lookup
-    1. dot notation vs nested form
-    1. $currentDate vs $$NOW
-    1. delete() vs remove()
-    1. bulkWrite vs InsertMany
-    1. replace vs update
-    1. shard vs node vs cluster
-    1. Aggregation Pipeline vs Map Reduce
-    1. vertical scalability vs horizontal scalability
-    1. load balancer vs sharding
-    1. odm vs driver
-    1. stage operator vs accumulator operator
-    1. normal shard key vs hashed shard key
-    1. aggregate(\[$count:”tota”\]) vs find({}).count()
-    1. replication vs replica set
-    1. transaction vs query
-    1. scaling up vs scaling down vs scaling out?
-    1. config servers vs mongos
-    1. load balancer vs auto balancer
-    1. countdocument vs count
+1. $or vs $in
+2. $all vs $in
+3. $elemMatch vs $in
+4. drop() vs remove()
+5. findAndModify() vs findOneAndUpdate()
+6. Primary key vs secondary key
+7. join vs lookup
+8. dot notation vs nested form
+9. $currentDate vs $$NOW
+10. delete() vs remove()
+11. bulkWrite vs InsertMany
+12. replace vs update
+13. shard vs node vs cluster
+14. Aggregation Pipeline vs Map Reduce
+15. vertical scalability vs horizontal scalability
+16. load balancer vs sharding
+17. odm vs driver
+18. stage operator vs accumulator operator
+19. normal shard key vs hashed shard key
+20. aggregate(\[$count:”tota”\]) vs find({}).count()
+21. replication vs replica set
+22. transaction vs query
+23. scaling up vs scaling down vs scaling out?
+24. config servers vs mongos
+25. load balancer vs auto balancer
+26. countdocument vs count
+27. What is a MongoDB driver?
+28. Capped collection and it’s advantages
+29. Profiler
+30. Explain
+31. Soft deleting
 
-1. What is a MongoDB driver?
-1. Capped collection and it’s advantages
-1. Profiler
-1. Explain
-1. Soft deleting
+### Interview Question
 
-1. ## **Interview Question**
+33. What to do when your quireing becomes slow?
+34. What to do when your files are getting very big?
+35. How to condense large volumes of data?
+36. How to search for text in MongoDB?
+37. How does MongoDB schema change?
+38. How can we Backup and Restore in MongoDB?
+39. What are the pros and cons of Normalising Data in MongoDB
 
-1. What to do when your quireing becomes slow?
-1. What to do when your files are getting very big?
-1. How to condense large volumes of data?
-1. How to search for text in MongoDB?
-1. How does MongoDB schema change?
-1. How can we Backup and Restore in MongoDB?
-1. What are the pros and cons of Normalising Data in MongoDB
+### Good to Know
 
-1. ## **Good to Know**
-
-1. Atomicity
-1. Type Bracketing
-1. Dot Notation
-1. Cursor behaviour
-1. Aggregation Pipeline
-1. Retryable Writes and Reads
-1. MongoDB CRUD Concepts
-1. B-Tree
-1. ACID compliance
-1. Mongoose
-1. Network Components
+41. Atomicity
+42. Type Bracketing
+43. Dot Notation
+44. Cursor behaviour
+45. Aggregation Pipeline
+46. Retryable Writes and Reads
+47. MongoDB CRUD Concepts
+48. B-Tree
+49. ACID compliance
+50. Mongoose
+51. Network Components
     1. load balancer
-    1. firewall
-1. **CAP Theorem**
+    2. firewall
+52. CAP Theorem
     1. consistency
-    1. availability
-    1. partition tolerance
-1. Firewall
-1. **Mongo Utilities**
+    2. availability
+    3. partition tolerance
+53. Firewall
+54. Mongo Utilities
     1. mongoexport
-    1. mongoimport
-    1. mongodump
-    1. mongorestore
-    1. mongostat
-    1. mongotop
-    1. mongooplog
-1. Clustered collections
-1. WAL
+    2. mongoimport
+    3. mongodump
+    4. mongorestore
+    5. mongostat
+    6. mongotop
+    7. mongooplog
+55. Clustered collections
+56. WAL

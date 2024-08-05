@@ -1,8 +1,8 @@
 # React
 
-1. ## **Set up**
+### Set up
 
-1. npx create-react-app \<appName \>
+1. `npx create-react-app \<appName \>`
 1. components
     1. default is App
 1. rafce, tsrafce
@@ -12,252 +12,252 @@
 1. Fragments
 1. Children Prop
 
-1. ## **Theory**
+### Theory
 
 1. What is React
-1. DOM
+2. DOM
     1. DOM vs Virtual DOM
-    1. Reconciliation
+    2. Reconciliation
         1. working
-    1. Diffing Algorithm
-    1. React Fibre
+    3. Diffing Algorithm
+    4. React Fibre
         1. incremental rendering
-    1. Shadow DOM
-1. Dynamic rendering
-1. props vs state
-1. Server Side vs Client Side Rendering in React
-1. Synthetic Events
+    5. Shadow DOM
+3. Dynamic rendering
+4. props vs state
+5. Server Side vs Client Side Rendering in React
+6. Synthetic Events
     1. Event Pooling
-1. Life Cycle
-1. View Oriented
-1. Memoization
-1. Pure functions and components
-1. Strict Mode
-1. SPAs vs MPAs
-1. CSR vs SSR
-1. Static vs Dynamic rendering
+7. Life Cycle
+8. View Oriented
+9. Memoization
+10. Pure functions and components
+11. Strict Mode
+12. SPAs vs MPAs
+13. CSR vs SSR
+14. Static vs Dynamic rendering
     1. ISR, SPA
-1. **Components**
+15. Components
     1. A React render tree
         1. top-level components
-        1. leaf components
-    1. Props
+        2. leaf components
+    2. Props
         1. immutable
-    1. Forwarding props
-    1. children
-    1. Importance of making them pure
-    1. local mutation
-1. **JSX**
+    3. Forwarding props
+    4. children
+    5. Importance of making them pure
+    6. local mutation
+16. JSX
     1. Rules of JSX
-    1. Fragment
-    1. JavaScript in JSX
-    1. HTML VS JSX
-1. Conditional rendering
-1. Key
-1. **UI as a tree**
+    2. Fragment
+    3. JavaScript in JSX
+    4. HTML VS JSX
+17. Conditional rendering
+18. Key
+19. UI as a tree
     1. Render trees
-    1. Module Dependency Tree
-    1. Bundler
+    2. Module Dependency Tree
+    3. Bundler
         1. eg: Webpack
-        1. Compiling
-        1. Loader
-        1. Code splitting
-1. **Rendering steps**
+        2. Compiling
+        3. Loader
+        4. Code splitting
+20. Rendering steps
     1. Triggering
-    1. Rendering
-    1. Committing
-1. Rerendering
-1. Batching updates
-1. **State**
+    2. Rendering
+    3. Committing
+21. Rerendering
+22. Batching updates
+23. State
     1. Behaviour
-    1. Queueing updates
-    1. Updater function
-    1. Updating object
-    1. local var vs state var
-    1. local mutation
-    1. Lifting state
-    1. Reducer
-1. Declarative vs Imperative UI
-1. **Event handlers**
-    1. onClick, onSubmit etc…d
-    1. Stopping propagation
-    1. Preventing default
-1. Lifecycle Methods
+    2. Queueing updates
+    3. Updater function
+    4. Updating object
+    5. local var vs state var
+    6. local mutation
+    7. Lifting state
+    8. Reducer
+24. Declarative vs Imperative UI
+25. Event handlers
+    1. `onClick`, `onSubmit` etc…
+    2. Stopping propagation
+    3. Preventing default
+26. Lifecycle Methods
     1. What is Mounting, Unmounting
-    1. **Phases**
-    1. **\- Mounting phase**
-        1. constructor
-        1. render
-        1. getDerivedStateFromProps
-        1. componentDidMount
-    1. **\- Updating phase**
-        1. shouldComponentUpdate
-        1. componentWillUpdate
-        1. componentDidUpdate
-            1. getSnapshotBeforeUpdate
-    1. **\- Unmounting phase**
-        1. componentWillUnmount
-    1. **\- Error Handling**
-        1. getDerivedStateFromError
-        1. componentDidCatch
-1. **Hooks**
+    2. Phases
+        1. Mounting phase
+            1. constructor
+            2. render
+            3. getDerivedStateFromProps
+            4. componentDidMount
+        2. Updating phase
+            1. shouldComponentUpdate
+            2. componentWillUpdate
+            3. componentDidUpdate
+                1. getSnapshotBeforeUpdate
+        3. Unmounting phase
+            1. componentWillUnmount
+        4. Error Handling
+            1. getDerivedStateFromError
+            2. componentDidCatch
+27. Hooks
     1. useState
         1. changeValue
-        1. changeValueWithFunction
-    1. useRef
+        2. changeValueWithFunction
+    2. useRef
         1. html
-        1. useState vs useRef
-        1. forwardRef
-        1. useImperativeHandle
-        1. flushSync
-    1. **useEffect**
+        2. useState vs useRef
+        3. forwardRef
+        4. useImperativeHandle
+        5. flushSync
+    3. useEffect
         1. dependency
-        1. return in useEffect
-        1. useLayoutEffect
-    1. useMemo
+        2. return in useEffect
+        3. useLayoutEffect
+    4. useMemo
         1. sample
-        1. recache
-        1. pros and cons
-        1. referential equality
-    1. useHistory
+        2. recache
+        3. pros and cons
+        4. referential equality
+    5. useHistory
         1. push
-        1. pop
-        1. replace
-        1. Redirect
-    1. useNavigate
+        2. pop
+        3. replace
+        4. Redirect
+    6. useNavigate
         1. navigate()
             1. route
-            1. \-1, 1
-    1. useCallback
+            2. \-1, 1
+    7. useCallback
         1. sample
-        1. useMemo vs useCallback
-        1. uses
-    1. useContext
+        2. useMemo vs useCallback
+        3. uses
+    8. useContext
         1. sample
-    1. useReducer
-    1. **Create custom hooks**
+    9. useReducer
+    10. Create custom hooks
         1. useDebugValue
-    1. useTransition
-    1. useDeferredValue
-    1. useId
+    11. useTransition
+    12. useDeferredValue
+    13. useId
         1. sample
-    1. useImperativeHandle
-1. **Props**
+    14. useImperativeHandle
+28. Props
     1. default prop
-    1. PropDrilling
-    1. Children
-1. **Components**
+    2. PropDrilling
+    3. Children
+29. Components
     1. Creating Components
-    1. Controlled vs Uncontrolled Components
+    2. Controlled vs Uncontrolled Components
         1. Inputs
-    1. Higher order components
-    1. Pure components
-1. **React Router**
+    3. Higher order components
+    4. Pure components
+30. React Router
 
     1. install
-    1. **Hooks**
+    2. Hooks
         1. useHistory
-        1. useNavigate
-    1. use
-    1. **Link**
+        2. useNavigate
+    3. use
+    4. Link
         1. replace
-        1. reloadDocument
-        1. state={}
-        1. \- useLocation()
-        1. **NavLink**
-            1. \-isActive
-            1. end
-        1. **Navigate**
+        2. reloadDocument
+        3. `state={}`
+        4. useLocation()
+        5. NavLink
+            1. isActive
+            2. end
+        6. Navigate
             1. useNavigate
-            1. navigate(-1)
-    1. **Types of Router**
+            2. navigate(-1)
+    5. Types of Router
         1. BrowserRouter
-        1. HashRouter
-        1. HistoryRouter
-        1. MemoryRouter
-        1. StaticRouter
-        1. NativeRouter
-    1. params (:id)
-    1. const {\<name\>} \= useParams()
-    1. useSearchParams
-    1. **Nesting Routes**
+        2. HashRouter
+        3. HistoryRouter
+        4. MemoryRouter
+        5. StaticRouter
+        6. NativeRouter
+    6. params (:id)
+    7. const {\<name\>} \= useParams()
+    8. useSearchParams
+    9. Nesting Routes
         1. index
-        1. location
-        1. shared element with children
-        1. outlet
-        1. \- useOutletContext()
-        1. Nesting in separate file
-        1. useRoute
+        2. location
+        3. shared element with children
+        4. outlet
+            1. useOutletContext()
+        5. Nesting in separate file
+        6. useRoute
 
-1. ## **Good to Know**
+### Good to Know
 
-1. Immer
-1. Object.entries(e)
-1. Icons
-1. Experimental Hooks
+32. Immer
+33. Object.entries(e)
+34. Icons
+35. Experimental Hooks
     1. useEffectEvent
-    1. use
-    1. useFormStatus
-1. useOptimistic
+    2. use
+    3. useFormStatus
+36. useOptimistic
 
-1. ## **Week 2**
+### Week 2
 
-1. Render props
-1. Higher order components
-1. Custom hooks
-1. Code splitting
+38. Render props
+39. Higher order components
+40. Custom hooks
+41. Code splitting
     1. Route based
-    1. Component based
-    1. React.lazy
-1. Higher order comps
-1. **Lazy Loading**
+    2. Component based
+    3. React.lazy
+42. Higher order comps
+43. Lazy Loading
     1. fallback ui
         1. suspense
-        1. **Error boundaries**
-        1. componentDidCatch
-        1. Fallback UI
-        1. Nested & Propagation
-1. **useReducer**
+        2. Error boundaries
+        3. componentDidCatch
+        4. Fallback UI
+        5. Nested & Propagation
+44. useReducer
     1. Dispatch
-    1. useReducer vs useState
-    1. useReducer vs redux
-    1. payload
-1. **PropTypes**
+    2. useReducer vs useState
+    3. useReducer vs redux
+    4. payload
+45. PropTypes
     1. types \=\> name, string, any
-    1. required, optional,
-    1. node, element type
-    1. oneof, shape
-    1. PropTypes vs Typescript
-1. **useMemo vs useCallback**
+    2. required, optional,
+    3. node, element type
+    4. oneof, shape
+    5. PropTypes vs Typescript
+46. useMemo vs useCallback
     1. React.Memo vs useMemo
-    1. Object reference
-    1. Pros and cons of memoization
-1. **Context API**
+    2. Object reference
+    3. Pros and cons of memoization
+47. Context API
     1. Provider
-    1. Consumer
-    1. useContext
-    1. useReducer
-1. **Webpack**
+    2. Consumer
+    3. useContext
+    4. useReducer
+48. Webpack
     1. Module Bundler
-    1. Code Splitting
-    1. Webpack Dev Server
-    1. Hot Module Replacement (HMR)
-    1. Tree Shaking
-1. **Babel**
+    2. Code Splitting
+    3. Webpack Dev Server
+    4. Hot Module Replacement (HMR)
+    5. Tree Shaking
+49. Babel
     1. Transpilation
-    1. Plugins
-    1. Runtime Polyfills
-    1. Dynamic Import
-1. useDeferedValue
-1. dead code elimination
-1. useTransition
+    2. Plugins
+    3. Runtime Polyfills
+    4. Dynamic Import
+50. useDeferedValue
+51. dead code elimination
+52. useTransition
 
-1. ## **Others**
+### Others
 
-    1. forward ref
-    1. useDebugValue
-    1. useImperativeHandle
-    1. Axios interceptor
-    1. Concurrent Requests
-        1. axios.all(), axios.spread()
-        1. cancel Token
+1. forward ref
+2. useDebugValue
+3. useImperativeHandle
+4. Axios interceptor
+5. Concurrent Requests
+    1. axios.all(), axios.spread()
+    2. cancel Token

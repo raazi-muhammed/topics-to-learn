@@ -1,6 +1,6 @@
 # React Native
 
-### **Core Components**
+### Core Components
 
 1. Text
 1. View
@@ -33,7 +33,7 @@
 1. TouchableHighlight
 1. TouchableWithoutFeedback
 
-### **Styling**
+### Styling
 
 1. style
 1. StyleSheet Utility
@@ -47,14 +47,14 @@
     1. align baseline
     1. align self
 1. Relative and Absolute layout
-1. **Dimension API**
+1. Dimension API
 1. Drawback of Dimensions API
 1. useWindowDimensions
 1. PlatformModule
     1. Platform.OS
     1. Plastform.Select
     1. using Extensions
-1. **Navigations**
+1. Navigations
     1. Expo vs ReactNavigation
     1. Stack
     1. Drawer

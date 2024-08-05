@@ -1,6 +1,8 @@
 # Node.js, Express
 
-## **Theory**
+## Node
+
+### Theory
 
 1. What is Node.js
 1. why v8 Engine
@@ -10,264 +12,249 @@
 1. Node Module System
 1. Concurrency vs parallelism
 1. REPL , Cli
-    1. \_
 1. NPX
 
-### **Architecture**
-
-![][image1]
+### Architecture
 
 1. I/O Polling
-1. epoll
-1. kquee
-1. Thread pool
-1. Event queue
-1. Event loop
+2. epoll
+3. kquee
+4. Thread pool
+5. Event queue
+6. Event loop
     1. phases
-1. External Resources
-1. Globals
-    1. \_\_dirname
-    1. \_\_filename
-    1. **Module**
-    1. Process
-1. **Modules**
-    1. **Core Modules.**
-    1. local Modules.
-    1. Third-party Modules.
-    1. module.exports:{}
-    1. require
-    1. ESM
+7. External Resources
+8. Globals
+    1. `__dirname`
+    2. `__filename`
+    3. Module
+    4. Process
+9. Modules
+    1. Core Modules.
+    2. local Modules.
+    3. Third-party Modules.
+    4. `module.exports:{}`
+    5. require
+    6. ESM
         1. import and export
-1. **NPM**
+10. NPM
     1. local and global
-    1. npm init
-1. npm install or i Nodemon
+    2. npm init
+11. `npm install` or `npm i`
+12. nodemon
     1. scripts
         1. start
-        1. dev
-    1. npm run dev
-1. package.json
-1. package-lock.json
-1. Event loop
-1. Event Queue
-1. Events
-    1. **Events emitter**
+        2. dev
+    2. npm run dev
+13. package.json
+14. package-lock.json
+15. Event loop
+16. Event Queue
+17. Events
+    1. Events emitter
         1. on, emit
-    1. Http module
-1. **Streams**
+    2. Http module
+18. Streams
     1. type of streams
         1. writable, readable, duplex, transform
-    1. createReadStream()
-    1. readFile vs readFileSync
-    1. pipe()
-    1. Buffers
-    1. Transfer-Encoding: chunked
-1. **Cron-job**
+    2. `createReadStream()`
+    3. `readFile` vs `readFileSync`
+    4. `pipe()`
+    5. Buffers
+    6. Transfer-Encoding: chunked
+19. Cron-job
     1. \* \* \* \* \*
-    1. 1st\* \= second
-    1. 2nd\* \= minute
-    1. 3rd\* \= hour
-    1. 4th\* \= day of month
-    1. 5th\* \= month
-    1. 6th\* \= day of week
-    1. or, range selector
-    1. time zone
-    1. validation
-1. **CORS**
+    2. 1st\* \= second
+    3. 2nd\* \= minute
+    4. 3rd\* \= hour
+    5. 4th\* \= day of month
+    6. 5th\* \= month
+    7. 6th\* \= day of week
+    8. or, range selector
+    9. time zone
+    10. validation
+20. CORS
     1. preflight request
         1. header
-        1. accept-control-allow-origin: \*
-        1. accept-control-allow-methods: \*
-1. **Cluster**
-1. Multithreading in node.js
-    1. require(‘worker_theads’)
-    1. new Worker
-1. thread pool
-1. worker thread
-    1. creating worker,
-    1. parent port
-1. cluster vs workerthread
-1. child process
-
+        2. `accept-control-allow-origin: *`
+        3. `accept-control-allow-methods: *`
+21. Cluster
+22. Multithreading in node.js
+    1. `require(‘worker_theads’)`
+    2. new Worker
+23. thread pool
+24. worker thread
+    1. creating worker
+    2. parent port
+25. cluster vs workerthread
+26. child process
     1. methods
-    1. \- fork
-    1. \- exec
-    1. \- execFile
-    1. \- spawn
-    1. spawn vs fork
-    1. child_procees.fork() vs cluster.fork()
+        1. fork
+        2. exec
+        3. execFile
+        4. spawn
+    2. spawn vs fork
+    3. `child_procees.fork()` vs `cluster.fork()`
 
-1. ## **HTTP**
+### HTTP
 
-    1. https
-    1. How does it work?
-    1. SSL certificate working
-    1. default port
-    1. request response cycle
-    1. Stateless protocol
-        1. Local storage, Sessions and Cookies
-    1. Request
-        1. General (start line)
-            1. method/target/version
-        1. header
-        1. body
-    1. Response
-        1. General (start line)
-            1. version/statuscode/statustext
-        1. header
-            1. content type
-        1. body
-            1. requested resource
-    1. **HTTP Methods**
-        1. GET
-        1. POST
-        1. PUT
-        1. PATCH
-        1. DELETE
-        1. HEAD
-        1. CONNECT
-        1. OPTIONS
-        1. TRACE
-    1. Idempotent
-    1. Safe Methods
-    1. User-Agent
-    1. Headers
-    1. writeHead vs setHead
-    1. Status code
-        1. 1xx: Informational
-        1. 2xx: Success
-            1. 200 \- Success
-            1. 201 \- Success and created
-        1. 3xx: Redirect
-            1. 301: moved to new URL
-            1. 304: not changed
-        1. 4xx: Client Error
-            1. 401: Unauthorised
-            1. 402: Payment Required
-            1. 403: Forbidden
-            1. 404: Page not found
-        1. 5xx: Server Error
-    1. MIME type
-    1. HTTP v2
-    1. TCP and IP
+1. https
+2. How does it work?
+3. SSL certificate working
+4. default port
+5. request response cycle
+6. Stateless protocol
+    1. Local storage, Sessions and Cookies
+7. Request
+    1. General (start line)
+        1. method/target/version
+    2. header
+    3. body
+8. Response
+    1. General (start line)
+        1. version/statuscode/statustext
+    2. header
+        1. content type
+    3. body
+        1. requested resource
+9. HTTP Methods
+    1. GET
+    2. POST
+    3. PUT
+    4. PATCH
+    5. DELETE
+    6. HEAD
+    7. CONNECT
+    8. OPTIONS
+    9. TRACE
+10. Idempotent
+11. Safe Methods
+12. User-Agent
+13. Headers
+14. writeHead vs setHead
+15. Status code
+    1. 1xx: Informational
+    2. 2xx: Success
+        1. 200 \- Success
+        2. 201 \- Success and created
+    3. 3xx: Redirect
+        1. 301: moved to new URL
+        2. 304: not changed
+    4. 4xx: Client Error
+        1. 401: Unauthorised
+        2. 402: Payment Required
+        3. 403: Forbidden
+        4. 404: Page not found
+    5. 5xx: Server Error
+16. MIME type
+17. HTTP v2
+18. TCP and IP
+19. XSS
+20. CSRF
+21. MMA
+22. referral header
+23. SQL injection
+24. prepared statements
 
-1. XSS
-1. CSRF
-1. MMA
-    1. referral header
-1. SQL injection
+## Express
 
-    1. prepared statements
-
-1. ## **Express**
-
-1. npm install express –save
-1. app \= express()
-    1. get()
-        1. status()
-        1. send()
-        1. sendFile()
-    1. post()
-        1. express.urlencode()
-        1. Form vs JS
-    1. put()
-    1. patch()
-    1. delete()
-    1. all()
-    1. use()
-    1. listen()
-1. Static files
+26. npm install express –save
+27. `app \= express()`
+    1. `get()`
+        1. `status()`
+        2. `send()`
+        3. `sendFile()`
+    2. `post()`
+        1. `express.urlencode()`
+        2. Form vs JS
+    3. `put()`
+    4. `patch()`
+    5. `delete()`
+    6. `all()`
+    7. `use()`
+    8. `listen()`
+28. Static files
     1. public
-    1. express.static()
-1. **API**
-    1. json()
-1. **Params, Query String**
-1. Route Parameter
-1. Query string/url Parameter
-1. Path params
-1. **MIddleware**
+    2. express.static()
+29. API
+    1. `json()`
+30. Params vs Query String
+31. Route Parameter
+32. Query string/url Parameter
+33. Path params
+34. MIddleware
     1. what is middleware
-    1. used for what?
-    1. req, res, next
-    1. next()
-    1. app.use in middleware
-    1. passing two middleware
-    1. **Types of Middleware**
+    2. used for what?
+    3. req, res, next
+    4. `next()`
+    5. `app.use` in middleware
+    6. passing two middleware
+    7. Types of Middleware
         1. Application-level middleware
-        1. Third party middleware
+        2. Third party middleware
             1. morgan
-            1. multer
-        1. Router-level middleware
-        1. Built-in middleware
-        1. Error-handling middleware
+            2. multer
+        3. Router-level middleware
+        4. Built-in middleware
+        5. Error-handling middleware
             1. err.statusCode
-            1. err.message
-1. **Routing**
-
+            2. err.message
+35. Routing
     1. router
-    1. express.Router()
+    2. express.Router()
 
-1. ### **Core Express**
+### Core Express
 
-    1. **Session**
-        1. i express-session
-        1. secret
-        1. resave
-        1. saveUninitialized
-        1. destroy()
-    1. **Cookies**
-        1. i cookie-parser
-    1. Core middleware
-    1. Core routing
-    1. Build own API
-    1. Core views
-    1. database integration
+1. Session
+    1. `i express-session`
+    2. secret
+    3. resave
+    4. saveUninitialized
+    5. destroy()
+2. Cookies
+    1. i cookie-parser
+3. Core middleware
+4. Core routing
+5. Build own API
+6. Core views
+7. database integration
 
-### **Questions**
+### Questions
 
 1. How to send find as response
 1. Transaction in node.js
 
-1. ### **EJS**
+### EJS
 
-    1. i ejs
-    1. server side rendering
-    1. view engine
-    1. render()
-    1. \<% %\>, \<%- %\>, \<%= %\>
-    1. partials
-
-1. **Rest API**
+1. i ejs
+2. server side rendering
+3. view engine
+4. render()
+5. `<% %>`, `<%- %>`, `<%= %>`
+6. partials
+7. Rest API
     1. RESTful
-1. fragment identifier
+8. fragment identifier
 
-1. ### **VS**
+### VS
 
-1. API vs HTTP
-1. API vs SSR
-1. HTTP vs HTTPS
-1. URIs vs URLs vs URNs
-1. Session vs Cookies
-1. GET vs POST
-1. PUT vs PATCH
-1. SSL vs TLS
-1. **Build-in Modules (only imp)**
+10. API vs HTTP
+11. API vs SSR
+12. HTTP vs HTTPS
+13. URIs vs URLs vs URNs
+14. Session vs Cookies
+15. GET vs POST
+16. PUT vs PATCH
+17. SSL vs TLS
+18. Build-in Modules (only imp)
     1. os
-    1. path
-        1. join()
-        1. basename()
-        1. resolve()
-    1. fs
-        1. fs sync
-        1. \- readFileSync()
-        1. \- writeFileSync()
-        1. \- appendFileSync()
-        1. \- unlinkFileSync()
-        1. \- statusSync()
-        1. \- mkdirSync()
+    2. path
+        1. `join()`
+        2. `basename()`
+        3. `resolve()`
+    3. fs
+        1. fs sync 2. readFileSync() 3. writeFileSync() 4. appendFileSync() 5. unlinkFileSync() 6. statusSync() 7. mkdirSync()
             1. recursive: true
-        1. **fs async**
-        1. \- readFile( )
-        1. \- writeFile()
-    1. http
-        1. createServer()
+        2. fs async 9. readFile( ) 10. writeFile()
+    4. http
+        1. `createServer()`

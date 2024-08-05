@@ -1,314 +1,309 @@
 # DSA
 
-1. ### **Algorithms**
+### Algorithms
 
-    - **Search**
-    - Binary Search(recursive also)
-    - Linear Search
+1. Search
+2. Binary Search(recursive also)
+3. Linear Search
+4. Recursion
+5. Iterative & recursive
+6. Virtual memory
+7. Amortised resizing
+8. Dynamic programing
+    1. Memoize approach
+    2. Bottom up approach
 
-1. Recursion
-1. Iterative & recursive
-1. Virtual memory
-1. Amortised resizing
-1. Dynamic programing
+### Problems
 
-    - Memoize approach
-    - Bottom up approach
+1. Factorial
+2. fibonacci
+3. prime number (with and without recursion)
 
-1. ### **Problems**
+### Complexity Analysis
 
-    - Factorial, fibonacci, prime number (with and without recursion)
+1. Time complexity
+2. Space complexity
 
-1. ### **Complexity Analysis**
+### Asymptotic Notations
 
-    - Time complexity
-    - Space complexity
+1. Ranking
+2. Big O notation
+3. Omega Notation
+4. Theta Notation
 
-1. ### **Asymptotic Notations**
+### Memory
 
-    - Ranking
-    - Big O notation
-    - Omega Notation
-    - Theta Notation
-
-1. ### **Memory**
-
-1. **Memory Allocation**
-    - Bit vs byte
-    - Memory address
-    - Contiguous memory allocation
-    - Non-contiguous memory allocation
-    - **Stack**
-        1. Primitive types are stored in stack
-    - **Heap**
-        1. Reference type are stored in heap
-        1. Eg: Arr, fun, obj
-1. **Memory Leak**
-    - Symptoms
-    - **Garbage Collections**
+1. Memory Allocation
+2. Bit vs byte
+3. Memory address
+4. Contiguous memory allocation
+5. Non-contiguous memory allocation
+6. Stack
+    1. Primitive types are stored in stack
+7. Heap
+    1. Reference type are stored in heap
+    2. Eg: Arr, fun, obj
+8. Memory Leak
+    1. Symptoms
+    2. Garbage Collections
         1. Process
-    - Reasons for memory leak
-    - How to debug
-1. **Big O Notation**
-    - Linear time complexity
-    - Constant time complexity
-    - Quadratic time complexity
-    - Qubic
-    - Logarithmic complexity
-    - Exponential complexity
-1. **Operations in normal array**
+    3. Reasons for memory leak
+    4. How to debug
+9. Big O Notation
+    1. Linear time complexity
+    2. Constant time complexity
+    3. Quadratic time complexity
+    4. Qubic
+    5. Logarithmic complexity
+    6. Exponential complexity
+10. Operations in normal array
+    1. Init
+    1. Set
+    1. Get
+    1. Traverse
+    1. Insert
+    1. Delete
 
-    - Init
-    - Set
-    - Get
-    - Traverse
-    - Insert
-    - Delete
-
-1. ### **Data Structures**
+### Data Structures
 
 1. What is DS?
-1. Advantages and Disadvantages
-1. Examples
-    - DOM
-    - Undu & Redo
-    - Os job scheduling
-1. **Dynamic Array**
-    - It’s working and memory allocation?
-    - Set
-1. **Linked List**
-
-    - Advantages and disadvantages
-    - Applications
-    - **Creating a linked list**
-    - **Operation**
+2. Advantages and Disadvantages
+3. Examples
+    1. DOM
+    2. Undu & Redo
+    3. Os job scheduling
+4. Dynamic Array
+    1. It’s working and memory allocation?
+    2. Set
+5. Linked List
+    1. Advantages and disadvantages
+    2. Applications
+    3. Creating a linked list
+    4. Operation
         1. Init
-        1. Set
-        1. Get
-        1. Traverse
-        1. Insert
-        1. Delete
-    - Singly Linked List
-    - Double linked list
-    - Circular linked list
-    - Array vs linked list
+        2. Set
+        3. Get
+        4. Traverse
+        5. Insert
+        6. Delete
+    5. Singly Linked List
+    6. Double linked list
+    7. Circular linked list
+    8. Array vs linked list
 
-1. ## **OTHERS**
+### Others
 
-1. **Build in DS in JS**
-    - **Array**
+1. Build in DS in JS
+    1. Array
         1. Push, pop, shift, unshift, forEach, map, filter, reduce, concat, slice, splice ,sort()
-        1. some(), every(), find(), findIndex(), fill(), flat(), reverse(), sort()
-    - **Objects**
+        2. some(), every(), find(), findIndex(), fill(), flat(), reverse(), sort()
+    2. Objects
         1. Insert, Remove, Access, Search,
-        1. Object.keys(), Object.values(), Object.entries()
-    - **Sets**
+        2. Object.keys(), Object.values(), Object.entries()
+    3. Sets
         1. add, has, delete, size, clear
-    - **Maps**
+    4. Maps
         1. set, get , has, delete, size, clear
-    - Array vs Set
-    - Object vs Map
-    - **Strings**
+    5. Array vs Set
+    6. Object vs Map
+    7. Strings
         1. Primitive and object string
-        1. Escape char
-        1. ASCII
+        2. Escape char
+        3. ASCII
             1. 32 \- Space
-            1. 48-57 \== (0-9)
-            1. 65-90 \== (A-Z)
-            1. 97-122 \== (a-z)
-        1. Unicode
-        1. UTF-8
-1. **Custom DS**
-    - Stacks
-    - Queue
-    - Circular queues
-    - Linked lists
-    - Hash tables
-    - Trees
-    - Graphs
+            2. 48-57 \== (0-9)
+            3. 65-90 \== (A-Z)
+            4. 97-122 \== (a-z)
+        4. Unicode
+        5. UTF-8
+2. Custom DS
+    1. Stacks
+    2. Queue
+    3. Circular queues
+    4. Linked lists
+    5. Hash tables
+    6. Trees
+    7. Graphs
 
-##
+## Intermediate
 
-## **Intermediate**
+### Algorithms
 
-1. ### **Algorithms**
-
-    - **Sorting**
-    - Bubble sort
-    - Insertion sort
-    - Quick sort
+1. Sorting
+    1. Bubble sort
+    2. Insertion sort
+    3. Quick sort
         1. Divide and conquer
-        1. Partition method
-        1. **Pivot selection**
-        1. Last, first
-        1. average/median
-    - Heap sort
-    - Merge sort
+        2. Partition method
+        3. Pivot selection
+        4. Last, first
+        5. average/median
+    4. Heap sort
+    5. Merge sort
         1. Divide and conquer
-    - Merge vs Quick sort
+    6. Merge vs Quick sort
+    7.
 
-1. ### **Data Structures**
+### Data Structures
 
-1. **Stacks**
-    - LIFO
-    - Push, pop
-    - Stack underflow
-    - Stack overflow
-    - Use cases
-    - **Types of Stack**
-    - Linear Stack
-    - Dynamic Stack
-    - Array-based
-    - Linked list based
-    - Monotonic stack
-1. **Queue**
-    - FIFO
-    - Enqueue
-    - Dequeue
-    - Peek
-    - Priority queue
-    - Circular queue
-    - Uses
-    - **Types of Queue**
-    - \- Linear Queue
-    - \- Circular Queue
-    - \- Priority Queue
-    - \- DEqueue (Double ended queue)
-        1. Input restricted
-        1. Output restricted
-    - \- Blocking Queue
-    - \- Concurrent Queue
-    - \- Delay Queue
-1. **Hash Table**
-    - Searching O(1)
-    - Hash function
-    - Collision
-    - Dynamic restructuring
-    - Uses
-    - Load factor
-    - **Operations**
-    - Init
-    - Insert
-    - Search
-    - Delete
-    - Traverser
-    - **Please Note**
-    - Week set, week map
-    - **Collisions Handling**
-    - \- Separate Chaining
-    - \- Open Addressing
-        1. Linear Probing
-        1. Quadratic Probing
-        1. Double Hashing
-        1. Clustering
-    - \- Cuckoo hashing
-    - \- Robin Hood hashing
-1. **SHA: Secure Hashing Algorithm**
+1. Stacks
+    1. LIFO
+    2. Push, pop
+    3. Stack underflow
+    4. Stack overflow
+    5. Use cases
+    6. Types of Stack
+    7. Linear Stack
+    8. Dynamic Stack
+    9. Array-based
+    10. Linked list based
+    11. Monotonic stack
+2. Queue
+    1. FIFO
+    2. Enqueue
+    3. Dequeue
+    4. Peek
+    5. Priority queue
+    6. Circular queue
+    7. Uses
+    8. Types of Queue
+        1. Linear Queue
+        2. Circular Queue
+        3. Priority Queue
+        4. DEqueue (Double ended queue)
+            1. Input restricted
+            2. Output restricted
+        5. Blocking Queue
+        6. Concurrent Queue
+        7. Delay Queue
+3. Hash Table
+    1. Searching O(1)
+    2. Hash function
+    3. Collision
+    4. Dynamic restructuring
+    5. Uses
+    6. Load factor
+    7. Operations
+        1. Init
+        2. Insert
+        3. Search
+        4. Delete
+        5. Traverser
+    8. Please Note
+        1. Week set, week map
+    9. Collisions Handling
+        1. Separate Chaining
+        2. Open Addressing
+            1. Linear Probing
+            2. Quadratic Probing
+            3. Double Hashing
+            4. Clustering
+        3. Cuckoo hashing
+        4. Robin Hood hashing
+4. SHA: Secure Hashing Algorithm
 
-##
-
-## **Advanced**
+## Advanced
 
 1. Linear, non-linear, hierarchical
 
-1. ### **Data Structures**
+### Data Structures
 
-1. **Tree**
-    - Features
-    - Uses
-    - parent, child, root, leaf, sibling, ancestor, descendent, path, distance, degree, dept, height,edge,subtree
-    - **Types of trees on nodes**
-    - \- Binary tree
-    - \- Ternary tree
-    - \- K-array tree
-    - \- Threaded binary tree
-    - **Types of trees on structure**
-    - \- Complete tree
-    - \- Full tree
-    - \- Perfect tree
-    - **\- Degrenarted**
-        1. Left-skew
-        1. Right-skew
-1. **Binary Search Tree (BST)**
-    - BST vs BT
-    - Uses
-    - Balanced vs unbalanced tree
-    - Properties of BST
-    - **Operations**
-    - \- Inserting
-    - \- Deletion
-    - **\- Traversal**
-        1. **DFS**
-        1. \- InOrder
-        1. \- PreOrder
-        1. \- PostOrder
-        1. **BFS**
-1. **Balanced Search Tree**
-    - AVL tree
-    - Red-black tree
-    - Prefix tree
-    - M-way search tree
-    - \- B Tree
-    - \- B+ Tree
-    - Merkle Tree
-    - Red-black tree vs AVL
-1. **Heap**
+1. Tree
+    1. Features
+    2. Uses
+    3. parent, child, root, leaf, sibling, ancestor, descendent, path, distance, degree, dept, height,edge,subtree
+    4. Types of trees on nodes
+    5. Binary tree
+    6. Ternary tree
+    7. K-array tree
+    8. Threaded binary tree
+    9. Types of trees on structure
+        1. Complete tree
+        2. Full tree
+        3. Perfect tree
+        4. Degrenarted
+            1. Left-skew
+            2. Right-skew
+2. Binary Search Tree (BST)
+    1. BST vs BT
+    2. Uses
+    3. Balanced vs unbalanced tree
+    4. Properties of BST
+    5. Operations
+        1. Inserting
+        2. Deletion
+    6. Traversal
+        1. DFS
+            1. InOrder
+            2. PreOrder
+            3. PostOrder
+        2. BFS
+3. Balanced Search Tree
+    1. AVL tree
+    2. Red-black tree
+    3. Prefix tree
+    4. M-way search tree
+    5. B Tree
+    6. B+ Tree
+    7. Merkle Tree
+    8. Red-black tree vs AVL
+4. Heap
     - Min Heap
-        1. **To get value of**
-        1. \- Left child
-        1. \- Right child
-        1. \- Parent
-        1. **Operations**
-        1. \- Init/ Heapify
-        1. \- Insert
-        1. \- Delete
+        1. To get value of
+            1. Left child
+            2. Right child
+            3. Parent
+        2. Operations
+            1. Init/ Heapify
+            2. Insert
+            3. Delete
     - Max Heap
     - Heapfity
         1. Bottom-up
-        1. Top-down
+        2. Top-down
     - DEPQ
-1. **Trie**
-    - String vs Trie
-    - **Operations**
-    - \- Init
-    - \- Insertion
-    - \- Delete
-    - \- Search
-    - Prefix and Suffix tree
-    - \- terminator char
-    - **Compressed Trie**
-    - \- Radix Tree (Patricia Trie)
-1. **Graph**
-
-    - Vertex, Edge
-    - Can be stored as
-    - \- Adjacency list
-        1. as linked list
-        1. time O(V)
-        1. space O(V+E)
-    - \- Adjacency matrix
-        1. As array
-        1. time O(1)
-        1. space O(v^2)
-    - Spanning tree
-        1. min spanning tree
-    - Graph indexing
+5. Trie
+    1. String vs Trie
+    2. Operations
+        1. Init
+        2. Insertion
+        3. Delete
+        4. Search
+        5. Prefix and Suffix tree
+        6. terminator char
+    3. Compressed Trie
+    4. Radix Tree (Patricia Trie)
+6. Graph
+    1. Vertex
+    2. Edge
+    3. Can be stored as
+        1. Adjacency list
+            1. as linked list
+            2. time O(V)
+            3. space O(V+E)
+        2. Adjacency matrix
+            1. As array
+            2. time O(1)
+            3. space O(v^2)
+        3. Spanning tree
+        4. Min spanning tree
+    4. Graph indexing
         1. Vertex-centric indexes
-        1. Edge-centric indexes
-    - **Types**
-    - \- Unidirectional (Direct graph)
-    - \- Bidirectional (Un DIrected graph)
-    - \- Cyclic
-    - \- Disconnected
-    - \- Weighted Graph
-    - \- Unweighted Graph
-    - \- Bipartite Graph
-    - **Traversal**
+        2. Edge-centric indexes
+    5. Types
+        1. Unidirectional (Direct graph)
+        2. Bidirectional (Un DIrected graph)
+        3. Cyclic
+        4. Disconnected
+        5. Weighted Graph
+        6. Unweighted Graph
+        7. Bipartite Graph
+    6. Traversal
         1. BFS
-        1. DFS
-    - River size problem
+        2. DFS
+    7. River size problem
 
-1. ### **Algorithms**
+### Algorithms
 
 1. Greedy method
 1. Kruskal's Algorithm
@@ -320,19 +315,47 @@
 1. Bipartite Graph Checking
 1. Max Flow (Ford-Fulkerson Algorithm)
 
-1. ### **Question**
+### Low level
+
+1. bit, byte
+    1. nibble
+2. word
+    1. dword
+    2. qword
+3. byte order
+    1. endianness
+4. registers
+5. cache line
+6. memoery
+    1. heap (in memory)
+    2. stack (in memory
+    3. virtual memory
+    4. orphaned meoery/memory leak
+7. pagings
+8. sements
+9. gramentaions
+10. page tables
+11. mmapping
+12. MMU (PTE, PTBR, TLB)
+13. DMA
+14. ASLR
+15. KASLR (xnu)
+16. KPTI
+17. PAC (arm64e)
+
+### Question
 
 1. Graph vs Tree
-1. Forest (in Tree)
-1. Forest \> Graph \> Tree \> Linked list
-1. Operators
-    - Binary operators
-    - Priority
-    - Infix
-    - Prefix (Polish notation)
-    - Postfix (Reverse Polish notation)
+2. Forest (in Tree)
+3. Forest > Graph > Tree > Linked list
+4. Operators
+    1. Binary operators
+    2. Priority
+    3. Infix
+    4. Prefix (Polish notation)
+    5. Postfix (Reverse Polish notation)
 
-### **General**
+### General
 
 1. How does Logarithms work
 1. File structure vs Data Structure

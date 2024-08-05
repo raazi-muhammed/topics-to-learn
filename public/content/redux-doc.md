@@ -1,6 +1,6 @@
 # Redux
 
-1. ## **Theory**
+### Theory
 
 1. Why, what
 1. Redux
@@ -12,25 +12,25 @@
 1. Middleware
 1. Calling APIs
 1. React reducer vs Redux
-1. **Store**
+1. Store
     1. Dispatch
     1. subscribe
         1. unsubscribe
     1. getState
     1. replaceReducer
     1. Store enhancer
-1. **Action**
+1. Action
     1. Action creator
-1. **Reducer**
+1. Reducer
     1. rules
-1. **Redux flow![][image2]**
-1. **Redux principles**
+1. Redux data flow
+1. Redux principles
     1. Store
     1. Action
     1. Reducer
 1. Selectors
     1. Memoized selector
-1. **Middleware**
+1. Middleware
     1. \- Logger, crash reporting
     1. \- Perform async tasks
     1. applyMiddleware
@@ -38,11 +38,11 @@
         1. Thunk vs saga
         1. Payload creator
     1. Adding multiple middleware
-1. **Slice**
+1. Slice
     1. init state
     1. reducers
     1. extraReducers
-1. **Redux toolkit**
+1. Redux toolkit
     1. Nanoid
     1. Redux Query.
 1. Normalising Data
@@ -54,7 +54,7 @@
 1. redux vs flux
 1. saga vs thunk
 
-1. ## **Other**
+### Other
 
 1. Immer and the working of Immer in redux.
 1. Access store outside of redux components
@@ -65,10 +65,10 @@
 1. createSelector
 1. createListenerMiddleware
 
-1. ## **JWT**
+### JWT
 
 1. What?
-1. **Structure**
+1. Structure
     1. Header
     1. Payload
         1. iat

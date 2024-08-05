@@ -1,281 +1,282 @@
 # JavaScript
 
-1. ## **DOM**
+## DOM
 
-    1. querySelector
-    1. textContent
-    1. addEventListener
-    1. Order of Parsing
-
-1. **event Propagation**
+1. querySelector
+2. textContent
+3. addEventListener
+4. Order of Parsing
+5. event Propagation
     1. event Bubbling
-    1. event Capturing/ Trickling
-    1. how to add both on program
-1. event.stopPropagation();
-1. inst
+    2. event Capturing/ Trickling
+    3. how to add both on program
+6. `event.stopPropagation();`
+7. inst
+8. `e.target`
+    1. id
+    2. tagName
+    3. pros and cons
+    4.
 
-    1. e.target
-        1. id
-        1. tagName
-        1. pros and cons
+### Architecture
 
-1. ## **Architecture**
-
-    1. Execution context
-        1. variable environment (memory)
-        1. Thread of execution (code)
-        1. \- global & local execution context
-        1. \- phases
+1. Execution context
+    1. variable environment (memory)
+    2. Thread of execution (code)
+        1. global & local execution context
+        2. phases
             1. Memory allocation
-            1. Code execution
-    1. Synchronous single threaded app
-    1. Call stack
-    1. Proxy
-        1. Proxy traps
-        1. Reflect
-        1. proxy vs reflect
-    1. **Event loop**
-        1. Callback queue/ task queue
-        1. Microtask queue
-            1. mutation observer
-        1. Starvation
-        1. Memory Heap
-    1. Just In Time Compilation
-    1. Interpreter vs Compiler
-    1. Abstract Syntax Tree
-    1. Concurrency model
+            2. Code execution
+2. Synchronous single threaded app
+3. Call stack
+4. Proxy
+    1. Proxy traps
+    2. Reflect
+    3. proxy vs reflect
+5. Event loop
+    1. Callback queue/ task queue
+    2. Microtask queue
+        1. mutation observer
+        2. Starvation
+        3. Memory Heap
+    3. Just In Time Compilation
+    4. Interpreter vs Compiler
+    5. Abstract Syntax Tree
+    6. Concurrency model
 
-1. ## **Theory**
+### Theory
 
 1. Data types
     1. wrapper objects
-    1. 0 vs new Number(0)
-    1. **Numbers**
+    2. 0 vs new `Number(0)`
+    3. Numbers
         1. 1_000_000
-        1. 1e9, 1e-6
-        1. Hex, binary and octal numbers
-        1. toString(base)
-        1. Math.trunc
-1. Operators
-1. enum
+        2. 1e9, 1e-6
+        3. Hex, binary and octal numbers
+        4. `toString(base)`
+        5. `Math.trunc()`
+2. Operators
+3. Enum
     1. how to get enum in javascript
-1. **Function**
+4. Function
     1. Function Statement
-    1. Function Expression
-    1. Function Declaration
-    1. Anonymous function
-    1. Named Function Expression
-    1. Functional Programing
-    1. **Higher order function**
-    1. First class function
-    1. **Decorator function**
+    2. Function Expression
+    3. Function Declaration
+    4. Anonymous function
+    5. Named Function Expression
+    6. Functional Programing
+    7. Higher order function
+    8. First class function
+    9. Decorator function
         1. use
-        1. \- count no of function call
-        1. \- valid data of params
-    1. **Pure function**
+            1. count no of function call
+            2. valid data of params
+    10. Pure function
         1. pros and cons
-        1. rules
-        1. pure vs impure
-    1. IIFE
+        2. rules
+        3. pure vs impure
+    11. IIFE
         1. pros
-1. Advantages and disadvantages of JS
-1. **Set Map Flat**
+        2. cons
+5. Advantages and disadvantages of JS
+6. Set Map Flat
     1. set
         1. add, delete, has, clear, kyes, values, entries
-        1. \<setName\>.size
-    1. map
+        2. `<setName>.size`
+    2. map
         1. get, set, has, delete, clear, keys, values, entries, forEach
-        1. iterating
-    1. object vs map
-    1. weekSet()
+        2. iterating
+    3. object vs map
+    4. WeekSet
         1. features
-    1. weekMap()
+    5. WeekMap
         1. features
-        1. key is private
-    1. Week set and map summary
-    1. falt()
-    1. flatMap()
-    1. reduceRight()
-    1. copyWithin()
-1. **Operators**
+        2. key is private
+    6. Week set and map summary
+    7. falt()
+    8. flatMap()
+    9. reduceRight()
+    10. copyWithin()
+7. Operators
     1. Nullish coalescing operator
-    1. Optional chaining
-    1. || vs ??
-    1. Ternary operator
-    1. Type Operators
-    1. **Unary operators**
+    2. Optional chaining
+    3. `||` vs `??`
+    4. Ternary operator
+    5. Type Operators
+    6. Unary operators
         1. delete
-        1. typeof
-        1. \!, \++, \-, \+
-    1. **Bitwise Operators**
+        2. typeof
+        3. \!, \++, \-, \+
+    7. Bitwise Operators
         1. bitwise OR
-        1. bitwise AND
-        1. uses
-1. **Scope**
+        2. bitwise AND
+        3. uses
+8. Scope
     1. Global scope
-    1. Module scope
-    1. Function scope
-    1. Lexical scope
-    1. Block scope
-1. Shadowing & Illegal shadowing
-1. **Prototype**
-1. Types of error
+    2. Module scope
+    3. Function scope
+    4. Lexical scope
+    5. Block scope
+9. Shadowing & Illegal shadowing
+10. Prototype
+11. Types of error
     1. syntax, logic
-1. **Closure**
+12. Closure
     1. Disadvantage
-    1. Uses
-    1. lexical scope vs closure
-    1. IIFE
-1. **Garbage collection**
+    2. Uses
+    3. lexical scope vs closure
+    4. IIFE
+13. Garbage collection
     1. How does it work?
-    1. mark-and-sweep
-    1. reachability
-    1. **Optimizations**
-        1. \- Generational
-        1. collection
-        1. \- Incremental collection
-        1. \- Idle-time collection
-1. **Hoisting**
-    1. TDZ let, const vs var
-    1. Function vs arrow function
-1. **Call Apply Bind**
+    2. mark-and-sweep
+    3. reachability
+    4. Optimizations
+        1. Generational
+        2. collection
+            1. Incremental collection
+            2. Idle-time collection
+14. Hoisting
+    1. TDZ `let`, `const` vs `var`
+    2. Function vs arrow function
+15. Call Apply Bind
     1. function borrowing
-    1. call vs apply vs bind
-    1. polyfills
-1. transpiler
-    1. Babel.
-    1. webpack
-1. polyfills vs transpiler
-1. This Keyword
-1. **String Methods**
+    2. call vs apply vs bind
+    3. polyfills
+16. transpiler
+    1. Babel
+    2. Webpack
+17. Polyfills vs Transpiler
+18. `this` keyword
+19. String Methods
     1. Length, toUpperCase, LowerCase, Trim, Pad, charAt, Split, Concat, substring, indexOf, lastIndexOf, localeCompare
-1. **Array Methods**
+20. Array Methods
     1. Map, Filter, Reduce, Find, Sort, Foreach, Push, Pop, Shift, Unshift, Slice, Splice, concat, indexOf, lastIndexOf, forEach, split, join, reduceRight, iArray, fill, copy, flat
-    1. spare array, jagged array, hols in array
-    1. copy within
-    1. typed arrays
-1. **Object Methods**
+    2. spare array, jagged array, hols in array
+    3. copy within
+    4. typed arrays
+21. Object Methods
     1. object constructor, literal
-    1. deleting field
-    1. Computed properties
-    1. \_\_proto\_\_
-    1. in
-    1. Object.assign
-    1. structuredClone
-    1. \_.cloneDeep(obj)
-    1. methods
-    1. this keyword
-    1. Symbol type
-1. Symbol
+    2. deleting field
+    3. Computed properties
+    4. `__proto__`
+    5. in
+    6. `Object.assign`
+    7. structuredClone
+    8. `\_.cloneDeep(obj)`
+    9. methods
+    10. `this` keyword
+    11. Symbol type
+22. Symbol
     1. properties
-    1. use
-    1. ongo
-    1. ​​global symbol registry
-    1. for, keyFor, iterator, toPrimitive
-1. **Loop**
+    2. use
+    3. ongo
+    4. ​​global symbol registry
+    5. for, keyFor, iterator, toPrimitive
+23. Loop
     1. for
-    1. do while vs while
-    1. labelled statements
-    1. \- break
-    1. \- continue
-    1. for…in
-    1. for…of
-1. **Callback**
+    2. do while vs while
+    3. labelled statements
+        1. break
+        2. continue
+    4. for…in
+    5. for…of
+24. Callback
     1. callback hell
-    1. inversion of control
-1. **Promises**
+    2. inversion of control
+25. Promises
     1. Promise states
-    1. Promise chaining
-    1. Promise.all
-    1. Promise.allSettled
-    1. Promise.any
-    1. Promise.race
-    1. Promise.resolve
-    1. Thenable
-    1. Finally
-    1. Catch
-    1. immutable
-    1. promisify
-    1. pros and cons
-1. **Async await**
+    2. Promise chaining
+    3. Promise.all
+    4. Promise.allSettled
+    5. Promise.any
+    6. Promise.race
+    7. Promise.resolve
+    8. Thenable
+    9. Finally
+    10. Catch
+    11. immutable
+    12. promisify
+    13. pros and cons
+26. Async await
     1. async always return a promise
-    1. error handling in async await
-1. **Debouncing & Throttling**
+    2. error handling in async await
+27. Debouncing & Throttling
     1. both are used for optimising performance of a web app
-    1. by limiting the rate of API calls
-1. Spread and Rest Operator
-1. DOM, BOM
-1. Window Object
-1. **ES6 and its features**
+    2. by limiting the rate of API calls
+28. Spread and Rest Operator
+29. DOM, BOM
+30. Window Object
+31. ES6 and its features
     1. Let, Var, Const
-    1. Ternary operator
-    1. Arrow function
-    1. Template literals
-    1. Default Parameters
-    1. Classes
-    1. Modules
-    1. Iterators
-    1. Object & Array Destructuring
-1. **Primitive and non-primitive**
+    2. Ternary operator
+    3. Arrow function
+    4. Template literals
+    5. Default Parameters
+    6. Classes
+    7. Modules
+    8. Iterators
+    9. Object & Array Destructuring
+32. Primitive and non-primitive
     1. Pass by value and pass by reference
-1. Message queue
-1. Life
-1. Generator
-1. **Prototype**
+33. Message queue
+34. Life
+35. Generator
+36. Prototype
     1. Prototype chain
-    1. Prototypal Inheritance
-    1. uses?
-    1. Circular reference
-    1. Object.key
-1. **Recursion**
+    2. Prototypal Inheritance
+    3. uses?
+    4. Circular reference
+    5. Object.key
+37. Recursion
     1. recursive call to function
-    1. condition to exit
-    1. pros and cons
-    1. display the fibonacci sequence
-    1. use
-1. JavaScript is dynamically types
-1. **Currying**
+    2. condition to exit
+    3. pros and cons
+    4. display the fibonacci sequence
+    5. use
+38. JavaScript is dynamically types
+39. Currying
     1. function inside function
-1. **Type Casting**
+40. Type Casting
     1. Implicite (Coercion)
-    1. Explicit (Conversion)
-1. Microtask queue
-1. **Shallow copy vs Deep copy**
+    2. Explicit (Conversion)
+41. Microtask queue
+42. Shallow copy vs Deep copy
     1. primitive vs structural
-    1. how to make these copies
+    2. how to make these copies
+    3. pros and cons
+    4. Mutable vs Immutable
+    5. `Object.freeze()`
+    6. `strucutredClone()`
+43. TCP/IP
+44. DNS
+45. IIFE
     1. pros and cons
-    1. Mutable vs Immutable
-    1. Object.freeze()
-1. TCP/IP
-1. DNS
-1. **IIFE**
-    1. pros and cons
-1. **Composition vs Inheritance**
-1. Function recursion
-1. \[Symbol.iterator\]
-1. Truthy and falsy value
-1. Strict mode in JS
-1. this substitution
+46. Composition vs Inheritance
+47. Function recursion
+48. `\[Symbol.iterator\]`
+49. Truthy and falsy value
+50. Strict mode in JS
+51. this substitution
 
-1. ## **VS**
+### VS
 
-    1. label vs func
-    1. \== and \===
-    1. Let, const, var
-    1. Synchronous vs asynchronous
-    1. While vs do while
-    1. Foreach Vs Map
-    1. Parameters, Arguments
-    1. for in, for of
-    1. Undefined, Null
-    1. Keywords & Identifiers
-    1. Type casting vs Type coercion
-    1. textContent vs innerText
-    1. identifiers vs variables
-    1. defer vs async
+1. label vs func
+2. `==` and `===`
+3. Let, const, var
+4. Synchronous vs asynchronous
+5. While vs do while
+6. Foreach Vs Map
+7. Parameters, Arguments
+8. for in, for of
+9. Undefined, Null
+10. Keywords & Identifiers
+11. Type casting vs Type coercion
+12. textContent vs innerText
+13. identifiers vs variables
+14. defer vs async
 
-1. ## **Good to Know**
+### Good to Know
 
-1. interpreted and compiled doe
-1. Server-side vs client-side code
-1. with in js
+16. interpreted and compiled doe
+17. Server-side vs client-side code
+18. with in js
