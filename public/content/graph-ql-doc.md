@@ -43,4 +43,8 @@
 
 [GraphQL in NestJS](https://youtu.be/CSfZmyzQAG8?si=n3LZjcM5xbmYpKXg)
 
-[^1]: a way to interact with the data, populate the filed with the data
+### Footer
+
+1. adslfjasd;fljads
+
+[^1]: testing 2git pull https://github.com/rabeeh003/topics-to-learn.git feature/python
