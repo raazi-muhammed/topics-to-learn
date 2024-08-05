@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Contributing to [Project Name]
+
+First off, thank you for considering contributing to our project! It's people like you that make it possible for [Project Name] to succeed and improve.
+
+## Table of Contents
+
+1. [How to Contribute](#how-to-contribute)
+2. [Getting Started](#getting-started)
+3. [Contributing to Existing Topics](#contributing-to-existing-topics)
+4. [Creating a New Topic](#creating-a-new-topic)
+5. [How to Report a Bug](#how-to-report-a-bug)
+6. [How to Suggest a Feature](#how-to-suggest-a-feature)
+7. [How to Submit a Pull Request](#how-to-submit-a-pull-request)
+
+## How to Contribute
+
+We welcome contributions in various forms, such as:
+
+-   Reporting bugs
+-   Suggesting new features
+-   Writing or improving documentation
+-   Fixing bugs or adding new functionality
 
 ## Getting Started
 
-First, run the development server:
+1. Fork the repository to your own GitHub account.
+2. Clone the project to your local machine:
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+    ```sh
+    git clone https://github.com/your-username/project-name.git
+    ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Create a new branch for your feature or bugfix:
+    ```sh
+    git checkout -b feature/your-feature-name
+    ```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contributing to Existing Topics
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+1. You can see all the markdown files in the `/public/content` folder.
+2. Select the topic you want to contribute to and make your changes.
 
-## Learn More
+## Creating a New Topic
 
-To learn more about Next.js, take a look at the following resources:
+1. To create a new topic, create a new markdown file in the `/public/content` folder.
+2. Add the link to the file in `/src/constants/markdownLinks.ts`.
+3. Add this item to the `topics` array in `/src/constants/topicList.ts`, including a title and description.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## How to Report a Bug
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+If you find a bug, please report it by opening an issue on GitHub. Please include:
 
-## Deploy on Vercel
+-   A descriptive title
+-   A clear description of the issue
+-   Steps to reproduce the issue
+-   Expected and actual results
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## How to Suggest a Feature
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you have an idea for a new feature, please submit an issue on GitHub with the following information:
+
+-   A descriptive title
+-   A detailed description of the feature
+-   Any relevant examples or mockups
+
+## How to Submit a Pull Request
+
+1. Commit your changes with a descriptive commit message:
+    ```sh
+    git commit -m "Add detailed description of your changes"
+    ```
+2. Push your branch to GitHub:
+    ```sh
+    git push origin feature/your-feature-name
+    ```
+3. Open a pull request on GitHub, providing a clear description of your changes and any relevant issue numbers.
+
+Thank you for your contribution!
