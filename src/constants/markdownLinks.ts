@@ -1,6 +1,7 @@
 enum MARKDOWN_LINKS {
     htmlCss = "/html-css",
     javaScript = "/java-script",
+    python = "/python",
     nodeExpress = "/node-express",
     mongoDb = "/mongo-db",
     react = "/react",
