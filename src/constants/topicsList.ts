@@ -94,11 +94,6 @@ export const topics = [
         description: "Docs for Clean Code",
     },
     {
-        href: MARKDOWN_LINKS.python,
-        title: "Python",
-        description: "Docs for Python",
-    },
-    {
         href: MARKDOWN_LINKS.graphQl,
         title: "GraphQL",
         description: "Docs for GraphQL",

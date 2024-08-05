@@ -19,7 +19,6 @@ enum MARKDOWN_LINKS {
     nextJs = "/next-js",
     nestJs = "/nest-js",
     cleanCode = "/clean-code",
-    python = "/python",
     others = "/others",
     graphQl = "/graph-ql",
 }

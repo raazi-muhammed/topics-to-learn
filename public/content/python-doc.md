@@ -1,140 +1,127 @@
 # Python
 
-1. ### **Basic**
+### Basic
 
--   Syntax
--   Variables and Data Types
+1. Syntax
+2. Variables and Data Types
+3. Integers
+4. Floats
+5. Strings
+6. Booleans
+7. Lists
+8. Tuples
+9. Dictionaries
+10. Sets
+11. Type casting
+12. Indexes and Negative Indexes
+13. Slicing
+14. Scope of variables
+15. Operators
+    1. Arithmetic Operators
+    2. Comparison Operators
+    3. Logical Operators
+    4. Assignment Operators
+    5. Bitwise Operators
+16. Control Flow
+17. Conditional Statements
+    1. If
+    2. elif
+    3. else
+18. Loops
+    1. for loop
+    2. while loop
+    3. break, continue, pass
+19. Comprehensions
+    1. List Comprehensions
+    2. Dictionary Compre…
+    3. Set Compre…
+20. Exception Handling
+    1. Try
+    2. except
+    3. finally
+    4. else
+    5. raise
+21. Exception Handling
+22. `with` statement
+23. Function
+    1. docstring
+    2. return
+    3. Lambda Functions
+24. Types of function arguments
+    1. Defualt argument
+    2. Keyword argument
+    3. Positional Arguments
+    4. Arbitrary Keyword Arguments
+25. call by sharing
+26. Genarator
+27. Iterator
+28. Decorators
+29. Recursion
+30. Map
+31. Filter
+32. Reduce
+33. eval
 
-1. Integers
-1. Floats
-1. Strings
-1. Booleans
-1. Lists
-1. Tuples
-1. Dictionaries
-1. Sets
+### Object-Oriented Programming (OOP)
 
--   Type casting
--   Indexes and Negative Indexes
--   Slicing
--   Scope of variables
--   Operators
+1. Classes and Objects
+    1. constructor
+    2. Deconstructor
+    3. self parameter
+2. Instance Variables
+3. Methods
+    1. Static method
+    2. Instance method
+    3. Class method
+    4. Magic Methods / Dunder
+        1. init, str, new, repr, etc.
+4. Inheritance
+    1. Single Inheritance
+    2. Multiple Inheritance
+    3. super()
+    4. Method Resolution Order (MRO).
+    5. C3 Linearization Algorithm.
+5. Polymorphism
+6. Encapsulation
+7. Abstraction
+8. Metaclasses
 
-1. Arithmetic Operators
-1. Comparison Operators
-1. Logical Operators
-1. Assignment Operators
-1. Bitwise Operators
-1. **Control Flow**
+### Modules and Packages
 
--   Conditional Statements
-    -   If
-    -   elif
-    -   else
--   Loops
-    -   for loop
-    -   while loop
-    -   break, continue, pass
--   Comprehensions
-    -   List Comprehensions
-    -   Dictionary Compre…
-    -   Set Compre…
--   Exception Handling
-    -   Try
-    -   except
-    -   finally
-    -   Else
-    -   raise
--   Exception Handling
--   “With“ statement
+1. Importing Modules
+2. Creating Modules
+3. Using Packages
+4. init.py
+5. Standard Library Modules
+6. File Handling
+    1. Reading Files
+    2. Writing Files
+    3. Working with File Paths
+    4. Context Managers
+7. Other topics
+    1. Pickling.
+    2. Programming Paradigms in Python.
+8. Memory Allocation.
+9. Memory Management Mechanisms.
+10. Referance conting.
+11. Garbage collection.
+12. Memory Leak in Python.
 
-1. **Function**
+### QA
 
--   Function
-    -   docstring
-    -   return
--   Lambda Functions
--   Types of function arguments
-    -   Defualt argument
-    -   Keyword argument
-    -   Positional Arguments
-    -   Arbitrary Keyword Arguments
--   call by sharing
--   Genarator
--   Iterator
--   Decorators
--   Recursion
--   Map
--   Filter
--   Reduce
--   eval
-
-1. **Object-Oriented Programming (OOP)**
-
--   Classes and Objects
-    -   constructor
-    -   Deconstructor
-    -   self parameter
--   Instance Variables
--   Methods
-    -   Static method
-    -   Instance method
-    -   Class method
-    -   Magic Methods / Dunder
-        -   init, str, new, repr, etc.
-    -
--   Inheritance
-    -   Single Inheritance
-    -   Multiple Inheritance
-    -   super()
-    -   Method Resolution Order (MRO).
-    -   C3 Linearization Algorithm.
--   Polymorphism
--   Encapsulation
--   Abstraction
--   Metaclasses
-
-1. **Modules and Packages**
-
--   Importing Modules
--   Creating Modules
--   Using Packages
--   init.py
--   Standard Library Modules
-
-1. **File Handling**
-
--   Reading Files
--   Writing Files
--   Working with File Paths
--   Context Managers
-
-1. **Other topics**
-
--   Pickling.
--   Programming Paradigms in Python.
--   Memory Allocation.
--   Memory Management Mechanisms.
--   Referance conting.
--   Garbage collection.
--   Memory Leak in Python.
-
-1. **QA**
-
--   role of init.py in package?
--   Python is Intrepreter language ?
--   Deffrence between oops and pops ?
--   Multy thrud language ?
--   Mutable vs immutable?
--   Shaloow coppy, deep coppy ?
--   What is .pyc file ?
--   Generate random number between 1 and 100 using lambda function?
--   Deffrent between “is” and “==”?
--   Different between “\_\_name\_\_” and “\_\_main\_\_” ?
--   What is iterable ?
--   What is primitive and non primitive ?
-
-staticmethod vs classmethod  
-Regex  
-Multy processing  
-split
+1. role of init.py in package?
+2. Python is Intrepreter language ?
+3. Deffrence between oops and pops ?
+4. Multy thrud language ?
+5. Mutable vs immutable?
+6. Shaloow coppy, deep coppy ?
+7. What is .pyc file ?
+8. Generate random number between 1 and 100 using lambda function?
+9. Deffrent between “is” and “==”?
+10. Different between “\_\_name\_\_” and “\_\_main\_\_” ?
+11. What is iterable ?
+12. What is primitive and non primitive ?
+13. staticmethod vs classmethod
+14. Regex
+15. Multy processing
+16. split
