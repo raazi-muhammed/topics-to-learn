@@ -1,6 +1,6 @@
-# Contributing to [Project Name]
+# Contributing to Topics to learn
 
-First off, thank you for considering contributing to our project! It's people like you that make it possible for [Project Name] to succeed and improve.
+First off, thank you for considering contributing to our project!
 
 ## Table of Contents
 
