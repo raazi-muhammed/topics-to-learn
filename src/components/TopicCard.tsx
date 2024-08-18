@@ -17,7 +17,7 @@ export default function TopicCard({
 }) {
     return (
         <Link href={href}>
-            <Card>
+            <Card variant="mutedGradient">
                 <CardContent className="py-4">
                     <CardTitle className="m-0 mb-2">{title}</CardTitle>
                     <CardDescription>{description}</CardDescription>
