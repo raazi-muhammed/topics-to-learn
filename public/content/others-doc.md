@@ -65,8 +65,34 @@
 1. Params
 1. Returns
 
-1. ### **Sequelize**
+### **Blockchain**
 
-1. ### **Testin**
-
-1. ### **Swagger**
+1. Centralised vs Decentralised
+2. Blockchain
+3. Ledger
+4. Block
+    1. data,
+    2. hash,
+    3. prev hash,
+    4. Genesis block
+5. Security
+    1. Proof of work
+        1. proof fo stake
+    2. Consensus Rule
+        1. Copy of chain in network
+    3. Cryptographic proof
+    4. Algo
+        1. SHA256
+        2. RSA
+        3. MD5
+6. Crypto
+    1. no conversion
+    2. centralised
+    3. use case
+        1. patient records
+        2. real estate \- lottery
+7. Smart contracts
+8. Ethereum
+    1. Solidity
+9. Mining
+10. Gas fees

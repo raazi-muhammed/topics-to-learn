@@ -104,6 +104,16 @@ export const topics = [
         description: "Docs for GraphQL",
     },
     {
+        href: MARKDOWN_LINKS.typeOrm,
+        title: "TypeORM",
+        description: "Docs for TypeORM",
+    },
+    {
+        href: MARKDOWN_LINKS.workflow,
+        title: "Workflow",
+        description: "Docs for Workflow",
+    },
+    {
         href: MARKDOWN_LINKS.others,
         title: "Others",
         description: "Miscellaneous Docs",
