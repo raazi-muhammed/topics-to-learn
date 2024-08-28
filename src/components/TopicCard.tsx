@@ -27,6 +27,10 @@ export default function TopicCard({
                         <CardTitle className="m-0 mb-2 font-mono">{title}</CardTitle>
                         <CardDescription>{description}</CardDescription>
                     </div>
+            <Card variant="mutedGradient">
+                <CardContent className="py-4">
+                    <CardTitle className="m-0 mb-2">{title}</CardTitle>
+                    <CardDescription>{description}</CardDescription>
                 </CardContent>
             </Card>
         </Link>

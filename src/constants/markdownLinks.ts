@@ -20,8 +20,10 @@ enum MARKDOWN_LINKS {
     nextJs = "/next-js",
     nestJs = "/nest-js",
     cleanCode = "/clean-code",
-    others = "/others",
     graphQl = "/graph-ql",
+    typeOrm = "/type-orm",
+    workflow = "/workflow",
+    others = "/others",
 }
 
 export default MARKDOWN_LINKS;
