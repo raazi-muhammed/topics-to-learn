@@ -257,6 +257,8 @@
 49. Truthy and falsy value
 50. Strict mode in JS
 51. this substitution
+52. implied global
+53. Intersection Observer API
 
 ### VS
 
