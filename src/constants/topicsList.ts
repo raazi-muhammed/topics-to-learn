@@ -2,6 +2,12 @@ import MARKDOWN_LINKS from "./markdownLinks";
 
 export const topics = [
     {
+        href: MARKDOWN_LINKS.angular,
+        title: "Angular (v20)",
+        icon: "/icon/Angular.png",
+        description: "Docs for the Angular 20.2"
+    },
+    {
         href: MARKDOWN_LINKS.htmlCss,
         title: "HTML & CSS",
         icon: "/icon/html-css.png",

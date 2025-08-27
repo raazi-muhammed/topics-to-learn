@@ -1,4 +1,5 @@
 enum MARKDOWN_LINKS {
+    angular = "/angular",
     htmlCss = "/html-css",
     javaScript = "/java-script",
     python = "/python",
