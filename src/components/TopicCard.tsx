@@ -11,22 +11,22 @@ export default function TopicCard({
     title,
     description,
     href,
-    icon,
+    // icon,
 }: {
-    icon: string;
+    // icon: string;
     title: string;
     description: string;
     href: string;
 }) {
     return (
         <Link href={href}>
-            <Card>
+            {/* <Card>
                 <CardContent className="py-4 flex items-center gap-4">
                     <Image src={icon} alt="logo" width={50} height={50} className="rounded-sm object-cover" />
                     <div>
                         <CardTitle className="m-0 mb-2 font-mono">{title}</CardTitle>
                         <CardDescription>{description}</CardDescription>
-                    </div>
+                    </div> */}
             <Card variant="mutedGradient">
                 <CardContent className="py-4">
                     <CardTitle className="m-0 mb-2">{title}</CardTitle>
